@@ -3,16 +3,17 @@ Product we sell: Watches
 management team
 focus 
 
-Page1: mission statement/About / watches without prices
-Page2: Management Team
-Page 3: names of watches and watches with prices, color, material etc in a  table
-page 4 -13
+Page 0: (this is only if we have time)  A home landing page that will direct to all of the following pages. It can be something similar          to what this website does(https://www.tourneau.com/).
+Page 1: Mission statement/ About/ Watch brands
+Page 2: Management Team
+Page 3: Names of watches and watches with prices (These will be in a table) 
+page 4-13: Color, material, etc with a purchasing form at the bottom (These pages will be the same template page with passed detail                 parameters)
 
-Each watch in the table will correspond to a new page with the watches detailed description and price
+- Each watch in the table will correspond to a new page with the watches detailed description and price
 
-Detailed description page will allow the user to order the product by filling a form. (product identifier, quantity, first name, last name, phone number, shipping address, shipping method(overnight 2-days, expedited, 6-days ground), credit card information)
+- Detailed description page will allow the user to order the product by filling a form. (product identifier, quantity, first name, last name, phone number, shipping address, shipping method(overnight 2-days, expedited, 6-days ground), credit card information)
 
-After you submit form, website should send email with purchase order, user will be able to send email.
+- After you submit form, website should send email with purchase order, user will be able to send email.
 
-Track Mouse movement.
+- Track Mouse movement to englarge images (in table or in detailed description or both?).
 
