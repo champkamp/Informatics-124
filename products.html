@@ -21,28 +21,124 @@
         <title>Products</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                margin:0;
+                background-color: #e6f0ff; 
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                height: 60px;
+            }
+
+            nav li {
+                float: left;
+            }
+
+            nav li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 18px 16px;
+                    text-decoration: none;
+            }
+
+            .theme_color:hover{
+                    background-color: #0066ff;
+            }
+            nav li a:hover:not(.theme_color) {
+                    background-color: #111;
+            }
+
+            .theme_color {
+                background-color: #1a75ff;
+            }
+            
+            h1{
+                font-size:  95px;
+                text-align: center;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                margin-left: 480px;
+                margin-right: 480px;
+                background-color: #cce0ff;
+            }
+     
+            
+            
+            td{
+                height: 320px;
+                width: 300px;
+                text-align: center;
+
+            }
+            
+            td:hover{
+                background-color:  #cce0ff;
+            }
+/*            this is complicated... you will need to ask me about it*/
+            td:hover .productImage{
+                width:250px; 
+                height:275px;
+               
+            }               
+            .productImage{
+                width: 200px; 
+                height:200px;
+            }  
+           
+            a{
+                font-size:  20px;
+                text-decoration: none;
+            }
+            
+            table a:visited{
+                    color: black;
+            }
+            
+        </style>
     </head>
     <body>
-        <h1>Our Products</h1>
-        <table>
+        
+        <!--        This is the navigator-->
+        <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="meet_the_team.html">Meet The Team</a></li>
+            <li style="float:right"><a class="theme_color" href="about.html">About Us</a></li>
+
+        </ul>
+        </nav>
+        
+        <!--        Page contents-->
+        <h1>Men's Watches</h1>
+        
+        <table align="center">
             <tr>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/AP1.jpg" alt="Audemars Piguet 1" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/AP1.jpg" alt="Audemars Piguet 1">
                         <br>
                         Audemars Piguet 1
                     </a>
                 </td>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/AP2.jpg" alt="Audemars Piguet 2" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/ap2.jpg" alt="Audemars Piguet 2">
                         <br>
-                        Audemars Piguet 2
+                         Audemars Piguet 2
                     </a>
                 </td>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/applewatch.jpeg" alt="Apple Watch" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/applewatch.jpeg" alt="Apple Watch">
                         <br>
                         Apple Watch
                     </a>
@@ -50,24 +146,24 @@
   
             </tr>
             
-                        <tr>
+            <tr>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/hublot1.jpg" alt="Hublot Ferrari" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/hublot1.jpg" alt="Hublot Ferrari">
                         <br>
                         Hublot Ferrari
                     </a>
                 </td>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/hublot2.jpg" alt="Hublot WBC" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/hublot2.jpg" alt="Hublot WBC">
                         <br>
                         Hublot WBC
                     </a>
                 </td>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/hublot3.jpg" alt="Hublot Spirit of Big Bang" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/hublot3.jpg" alt="Hublot Spirit of Big Bang">
                         <br>
                         Hublot Spirit of Big Bang
                     </a>
@@ -75,24 +171,24 @@
   
             </tr>
             
-                        <tr>
+            <tr>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/samsung.jpg" alt="Samsung Smart Watch" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/samsung.jpg" alt="Samsung Smart Watch">
                         <br>
                         Samsung Smart Watch
                     </a>
                 </td>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/motorola.png" alt="Moto Smart Watch" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/motorola.png" alt="Moto Smart Watch">
                         <br>
                         Moto Smart Watch
                     </a>
                 </td>
                 <td>
                     <a href="" >
-                        <img src="images/product_images/rolex1.jpg" alt="Rolex Sienna" style="width:304px;height:228px;">
+                        <img class="productImage" src="images/product_images/rolex1.jpg" alt="Rolex Sienna">
                         <br>
                         Rolex Sienna
                     </a>
@@ -100,6 +196,15 @@
   
             </tr>
                  
+            <tr>
+                <td>
+                    <a href="" >
+                        <img class="productImage" src="images/product_images/samng.jpg" alt="need the name">
+                        <br>
+                        Samsung Smart Watch
+                    </a>
+                </td>
+            </tr>
         </table>
         
 
