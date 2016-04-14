@@ -30,26 +30,27 @@
             This is some cool information about the watch
         </div>
         
-        <form action="MAILTO:aaa@bbb.ccc" method="get">
+        <form action="MAILTO:aaa@bbb.ccc?subject=Watch%20Order" method="post"> <br>
+            
             Product Identifier<br>
-            <input type="text"><br>
+            <input type="text" name="Product_Identifier"><br>
             
             Quantity<br>
-            <input type="text"><br>
+            <input type="text" name="Quantity"><br>
            
             First Name<br>
-            <input type="text"><br>
+            <input type="text" name="First_Name"><br>
             
             Last Name<br>
-            <input type="text"><br>
+            <input type="text" name="Last_Name"><br>
             
             Phone<br>
-            <input type="text"><br>
+            <input type="text" name="Phone_Number"><br>
                         
             Address<br>
-            <input type="text"><br>
+            <input type="text" name="Address"><br>
             
-            Shipping Method<br>
+            <br>Shipping Method<br>
             <input type="radio" name="shipping_info" value="Overnight">Overnight<br>
             <input type="radio" name="shipping_info" value="2-Day Expedited">2-Day Expedited<br>
             <input type="radio" name="shipping_info" value="6-Day Ground">6-Day Ground<br>
