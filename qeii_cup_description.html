@@ -23,6 +23,8 @@
         <link rel="stylesheet" type="text/css" href="style_sheets/navigation_style.css">
         <link rel="stylesheet" type="text/css" href="style_sheets/body_style.css">
         <link rel="stylesheet" type="text/css" href="style_sheets/product_description_style.css">
+        
+        <script src="email_validation.js"></script>
 
         
     </head>
@@ -62,7 +64,7 @@
             <br>Product Model: AP-QUE-II-CUP
         </div>
         
-        <form id="purchase_form" action="MAILTO:aaa@bbb.ccc?subject=Watch%20Order" method="post" enctype="text/plain"> 
+        <form name="purchase_email" id="purchase_form" action="MAILTO:aaa@bbb.ccc?subject=Watch%20Order" onsubmit="return validateEmail()" method="post" enctype="text/plain"> 
             <table>
                 <caption style="font-size:30px">ORDER FORM</caption>
                 <tr class="order_product_details">
