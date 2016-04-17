@@ -10,8 +10,23 @@ function validateEmail(){
     var state = document.forms["purchase_email"]["State"].value;
     var zipCode = document.forms["purchase_email"]["Zip Code"].value;
     
+    //var patt = /w3schools/i
+
     //checking the product model
-    
+    productModel = productModel.toUpperCase();
+    if(productModel === "AP-QUE-II-CUP")
+    {        
+            return(true);
+    }
+    else if(productModel === "another model")
+    {
+        return(true);
+    }
+    else
+    {
+        alert("Enter the exact product model");
+        return (false);
+    }
  
     //checking the size
     if(!parseInt(size)>0)
