@@ -1,0 +1,40 @@
+h1{
+    font-size:  75px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #cce0ff;
+}
+
+h2{
+    font-size:  20px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #cce0ff;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    background-color: #cce0ff;
+}
+
+li{
+    float: left;
+    margin-left: 10px
+}
+
+img{
+    text-align: center;
+    padding-left: 40%;
+    padding-right: 40%;
+    max-height: 400px;
+}
