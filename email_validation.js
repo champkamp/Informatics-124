@@ -10,21 +10,16 @@ function validateEmail(){
     var state = document.forms["purchase_email"]["State"].value;
     var zipCode = document.forms["purchase_email"]["Zip Code"].value;
     
-    //var patt = /w3schools/i
+    var nonNumberPattern = /^[a-zA-Z]+/;
+    var phonePattern = /^[0-9]{10}/;
+    var zipPattern = /^[0-9]{5}/;
 
     //checking the product model
     productModel = productModel.toUpperCase();
-    if(productModel === "AP-QUE-II-CUP")
-    {        
-            return(true);
-    }
-    else if(productModel === "another model")
+    if(productModel !== "AP-QUE-II-CUP" 
+            && productModel !== "another model")
     {
-        return(true);
-    }
-    else
-    {
-        alert("Enter the exact product model");
+        alert("Product Model Does Not Exist! (Enter the exact product model)");
         return (false);
     }
  
@@ -43,28 +38,47 @@ function validateEmail(){
     }
     
     //checking the first name
-    if(parseInt(firstName)>0)
+    if(!nonNumberPattern.test(firstName))
     {
-        alert("No number allowed in first name");
+        alert("No numbers allowed in first name");
         return (false);
     }
     
     //checking the last name
-    if(parseInt(lastName)>0)
+    if(!nonNumberPattern.test(lastName))
     {
-        alert("No number allowed in last name");
+        alert("No numbers allowed in last name");
         return (false);
     }
     
     //checking the phone number***
-    if(!parseInt(phoneNumber)>0)
+    if(!phonePattern.test(phoneNumber))
     {
-        alert("No number allowed in last name");
+        alert("Please enter a 10 digit phone number with only numbers");
         return (false);
     }
     
-    //checking the street
+    //checking the street (needs no specific check because it can accept both
+    //numbers and letters
+    
     //checking the city
+    if(!nonNumberPattern.test(city))
+    {
+        alert("Cities cannot have any numbers in them!");
+        return (false);
+    }
+    
     //checking the state
+    if(!nonNumberPattern.test(state))
+    {
+        alert("States cannot have any numbers in them!");
+        return (false);
+    }
+    
     //checking the zipcode
+    if(!zipPattern.test(zipCode))
+    {
+        alert("Zip codes must only be 5 digits long!");
+        return (false);
+    }
 }
