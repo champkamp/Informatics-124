@@ -90,6 +90,19 @@ function validateEmail(){
         //we could do another check in here to make sure it is a legitamate credit 
         //  card, but it will be hard for people to test (since they probably dont
         //  want to find a valid credit card number
+//        var sum = 0;
+//        for (var i = 0; i < val.length; i++) {
+//            var intVal = parseInt(val.substr(i, 1));
+//            if (i % 2 == 0) {
+//                intVal *= 2;
+//                if (intVal > 9) {
+//                    intVal = 1 + (intVal % 10);
+//                }
+//            }
+//            sum += intVal;
+//        }
+//        return (sum % 10) == 0;
+//    
         alert("Credit card number must be 16 digits long!");
         return (false);
     }
