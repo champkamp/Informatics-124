@@ -81,6 +81,11 @@
                     float: left;
             }
             
+            .credit_card_details{
+                text-align: center; 
+                border: 1px solid black;
+
+            }
             
             .submit_cell{
                 /*border: 1px solid black;*/

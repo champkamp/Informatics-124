@@ -116,20 +116,24 @@
                 <tr>
                     <td>
                         <div style="text-align: center; padding-bottom: 8px">Shipping Method</div>
-                        <input type="radio" name="Shipping Info" value="Overnight">Overnight<br>
-                        <input type="radio" name="Shipping Info" value="2-Day Expedited">2-Day Expedited<br>
-                        <input type="radio" name="Shipping Info" value="6-Day Ground" checked>6-Day Ground<br>
+                        <input type="radio" name="Shipping Info" value="Overnight">Overnight ($20)<br>
+                        <input type="radio" name="Shipping Info" value="2-Day Expedited">2-Day Expedited ($10)<br>
+                        <input type="radio" name="Shipping Info" value="6-Day Ground" checked>6-Day Ground (Free)<br>
                     </td>
                     <td colspan="2" style="text-align: center">
                         Notes<br>
                         <textarea name="Notes" form="purchase_form" style="margin: 0px; height: 106px; width: 356px;"></textarea>
                     </td>
-                <tr>
-                    
-                <tr>
-                    <td colspan="4" class="submit_cell"><input type="submit" style="width:300px;height:40px;"></td>
-                </tr>    
+                </tr>
                 
+                <tr class="credit_card_details">
+                    <td colspan="3"><label style="padding-right: 5px; font-size: 20px">Credit Card Number </label><input type="text" name="Credit Card Number" required style="width: 40%"></td>
+                </tr>   
+                
+                <tr>
+                    <td colspan="3" class="submit_cell"><input type="submit" style="width:300px;height:40px;"></td>
+                </tr>    
+                    
             </table>
         </form>
         

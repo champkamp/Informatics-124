@@ -5,14 +5,16 @@ function validateEmail(){
     var firstName = document.forms["purchase_email"]["First Name"].value;
     var lastName = document.forms["purchase_email"]["Last Name"].value
     var phoneNumber = document.forms["purchase_email"]["Phone Number"].value;
-    var street = document.forms["purchase_email"]["Street"].value;
+//    var street = document.forms["purchase_email"]["Street"].value;
     var city = document.forms["purchase_email"]["City"].value;
     var state = document.forms["purchase_email"]["State"].value;
     var zipCode = document.forms["purchase_email"]["Zip Code"].value;
+    var creditCardNumber = document.forms["purchase_email"]["Credit Card Number"].value;
     
     var nonNumberPattern = /^[a-zA-Z]+/;
     var phonePattern = /^[0-9]{10}/;
     var zipPattern = /^[0-9]{5}/;
+    var creditPattern = /^[0-9]{16}/;
 
     //checking the product model
     productModel = productModel.toUpperCase();
@@ -81,4 +83,10 @@ function validateEmail(){
         alert("Zip codes must only be 5 digits long!");
         return (false);
     }
+    
+//    //validating the credit card number
+//    if(!creditPattern.test(creditCardNumber))
+//    {
+//        
+//    }
 }
