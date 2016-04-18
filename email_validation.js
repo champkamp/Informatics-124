@@ -84,9 +84,13 @@ function validateEmail(){
         return (false);
     }
     
-//    //validating the credit card number
-//    if(!creditPattern.test(creditCardNumber))
-//    {
-//        
-//    }
+    //validating the credit card number
+    if(!creditPattern.test(creditCardNumber))
+    {
+        //we could do another check in here to make sure it is a legitamate credit 
+        //  card, but it will be hard for people to test (since they probably dont
+        //  want to find a valid credit card number
+        alert("Credit card number must be 16 digits long!");
+        return (false);
+    }
 }
